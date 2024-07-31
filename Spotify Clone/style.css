@@ -1,0 +1,402 @@
+body{
+    font-family: 'Montserrat';
+    margin: 0; 
+    color: #fff;
+    overflow: hidden;
+}
+
+.m{
+
+    height: 100vh;
+    display: flex;
+    background-color: #000;
+    
+}
+
+.sidebar{
+    background-color: black;
+    width: 376px;
+    border-radius: 1rem ;
+    padding: 0.25rem;
+    margin-right: 0.5rem;
+
+}
+
+.main{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+}
+
+.music{
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.nav-option{
+    line-height: 2.5rem;
+    padding-left: 1rem;
+
+    opacity: 0.5;
+}
+
+.nav-option:hover{
+    opacity: 1;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-option a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 20px;
+    
+}
+
+.nav-option i{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.library{
+    margin-top: 10px;
+    background-color: black;
+    height: 100vh;
+    border-radius: 1rem;
+    /* padding: 0.5rem 0.75rem; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.library .lib{
+    display: flex;
+    line-height: 2.5rem;
+    gap: 40px;
+    border-radius: 1rem 1rem 0 0;
+    padding: 0.5rem 1.5rem;
+    /* margin-top: 10px; */
+    background-color: #121212;
+    align-items: center;
+    
+}
+
+
+.lib a{
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    opacity: 0.5;
+}
+.lib i{
+    font-size: 1.5rem;
+    line-height: 0.5rem;
+    opacity: 0.5;
+    
+}
+
+.lib a:hover{
+    opacity: 1;
+}
+.lib i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.lib-box{
+    padding: 0.5rem 0.75rem;
+    background-color: #121212;
+    height: 100vh;
+}
+
+.p, .a{
+    margin-top: 10px;
+}
+
+.card1{
+
+    height: 8rem;
+    background-color: #232323;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    align-items: center;
+
+}
+
+.boxp{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+.box1{
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: fit-content;
+}
+
+.ins-t{
+    background-color: #000;
+    color: #fff;
+}
+
+.main-nav img{
+    height: 40px;
+    width: 40px;
+    color: #fff;
+}
+
+.main-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+    z-index: 1;
+}
+
+.main-nav-icons{
+    margin-left: 0.75rem;
+}
+
+.main-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 2rem;
+}
+
+@media (max-width:1000px){
+    .back{
+        visibility: hidden;
+    }
+}
+.body{
+    padding: 0 1.5rem 0 1.5rem;
+}
+.card{
+    margin-left: 1.5rem;
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.card-container{
+     display: flex;
+    flex-wrap: wrap;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-body{
+    font-size: 0.75rem;
+    opacity: 0.75;
+}
+
+.footer{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: 0.4;
+}
+.music{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.album{
+    width: 25%;
+}
+
+.player{
+    padding: 1rem 0 1rem 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+
+    /* line-height: 3rem; */
+    
+}
+
+.player-con{
+    font-size: 1rem;
+    margin-top: 10px;
+    /* padding: 0.5rem; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+}
+
+.controls{
+    width: 25%;
+    padding: 1rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.controls .ctr-icon{
+    margin-left: 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.vol-bar{
+    width: 30%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.vol-bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+    margin-top: -10px;
+    accent-color: #1bd760;
+}
+
+.vol-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    
+    /* background-color: ; */
+    border-radius: 50%;
+    margin-top: -6px;
+    visibility: hidden;
+}
+
+
+.vol-bar::-webkit-slider-runnable-track:hover{
+    background-color: #1bd760;
+
+}
+.vol-bar::-webkit-slider-thumb:hover{
+    background-color: #ddd;
+    visibility: visible;
+}
+.playbar{
+    padding-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    accent-color: #1bd760;
+}
+
+.bar::-webkit-slider-runnable-track{
+    background-color: #ddd;
+    border-radius: 100px;
+    height: 0.25rem;
+    accent-color: #1bd760;
+}
+
+.bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+    visibility: hidden;
+}
+
+.bar::-webkit-slider-runnable-track:hover{
+    background-color: #1bd760;
+
+}
+.bar::-webkit-slider-thumb:hover{
+    background-color: #ddd;
+    visibility: visible;
+}
+
+.album{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+}
+
+.album .alb-img img{
+    height: 50px;
+    width: 50px;
+}
+
+.tit{
+    font-size: 0.9rem;
+}
+
+.des{
+    font-size: .60rem;
+}
+.album .alb-name p{
+    margin-left: 1rem;
+    line-height: 0.5rem;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+i:hover{
+    cursor: pointer;
+}
